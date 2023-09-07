@@ -1,37 +1,37 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Login</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Login</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form [formGroup]="formularioLogin">
-        <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
-          <ion-input formControlName="nombre"  [(ngModel)]="usuario"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Contraseña</ion-label>
-          <ion-input formControlName="password" type="password"></ion-input>
-        </ion-item>
-      </form>
-      <br>
-      <ion-button (click)="ingresar()">
-        Ingresar
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
-
-<ion-footer>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="end">
-      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
-    </ion-buttons>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title >login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar>
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="floating" value="" minlength="3" maxlength="8" required [(ngModel)]="user.usuario">
+          <div slot="label">Usuario <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+    </ion-list>
   </ion-toolbar>
-</ion-footer>
+  <ion-toolbar>
+    <ion-list>
+      <ion-item>
+        <ion-input labelPlacement="floating" value="" minlength="4" maxlength="4" required inputmode="numeric" type="password" [(ngModel)]="user.password">
+          <div slot="label">Password <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-button expand="block" (click)="ingresar()">Ingresar</ion-button>
+  </ion-toolbar>
+  <ion-toolbar>
+    <a [routerLink]="['restaurar-password']">Reestablecer Password</a>
+  </ion-toolbar>
+</ion-content>
