@@ -7,9 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  user = 'Sherlock Holmes';
   labelCabecera: any;
   animacion_labelCabecera: any;
   animationCtrl: any;
+  
 
   constructor(private router: Router) {}
 
