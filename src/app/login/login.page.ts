@@ -11,7 +11,7 @@ import { ToastController } from '@ionic/angular';
 export class LoginPage implements OnInit {
 
   user={
-    usuario:"nico",
+    usuario:"Diego",
     password:"1234"
   }
 
