@@ -20,13 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
-    path: 'hero',
-    loadChildren: () => import('./hero/hero.module').then( m => m.HeroPageModule)
+    path: 'reestablecer',
+    loadChildren: () => import('./reestablecer/reestablecer.module').then( m => m.ReestablecerPageModule)
   },
-  {
-    path: 'hero',
-    loadChildren: () => import('./hero/hero.module').then( m => m.HeroPageModule)
-  },
+  
 ];
 
 @NgModule({

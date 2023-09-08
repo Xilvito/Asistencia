@@ -11,13 +11,15 @@ import { ToastController } from '@ionic/angular';
 export class LoginPage implements OnInit {
 
   user={
-    usuario:"Diego",
+    usuario:"JAJA",
     password:"1234"
   }
 
   field:string="";
 
   constructor(private router: Router,public toastController: ToastController) { }
+
+  
 
   ngOnInit() {
   }
@@ -80,6 +82,10 @@ export class LoginPage implements OnInit {
       }
     );
     toast.present();
+  }
+
+  olvido(){
+    this.router.navigate(['reestablecer']);
   }
 
 }

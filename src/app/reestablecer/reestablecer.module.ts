@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HeroPageRoutingModule } from './hero-routing.module';
+import { ReestablecerPageRoutingModule } from './reestablecer-routing.module';
 
-import { HeroPage } from './hero.page';
+import { ReestablecerPage } from './reestablecer.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeroPageRoutingModule
+    ReestablecerPageRoutingModule
   ],
-  declarations: [HeroPage]
+  declarations: [ReestablecerPage]
 })
-export class HeroPageModule {}
+export class ReestablecerPageModule {}

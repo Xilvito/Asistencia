@@ -1,23 +1,25 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Bienvenido al Portal
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>    
-    <ion-label >Registra tu Asistencia!</ion-label>    
-  </ion-item>
-  <p>Bienvenido {{user.usuario}}</p>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bienvenidos Registro Asistencia</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <p>Bienvenido {{data.usuario}}</p>
 
 
-<ion-footer>
-  <ion-toolbar>
-    <ion-title>Este es el footer</ion-title>
-  </ion-toolbar>
-</ion-footer>
-
-
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>
+        Desarrollado app
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 

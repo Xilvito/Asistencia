@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>reestablecer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">reestablecer</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-input label="Usuario" label-placement="floating" fill="solid" placeholder="Ingresar usuario" [(ngModel)]="user.usuario"></ion-input>
+    <ion-button (click)="presentAlert1()">Enviar</ion-button>
+  </ion-list>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Desarrollado app
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

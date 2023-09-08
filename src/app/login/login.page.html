@@ -32,6 +32,14 @@
     <ion-button expand="block" (click)="ingresar()">Ingresar</ion-button>
   </ion-toolbar>
   <ion-toolbar>
-    <a [routerLink]="['restaurar-password']">Reestablecer Password</a>
+    <ion-button class="olvido" fill="clear" (click)="olvido()" size="small">¿Olvidaste tu contraseña?</ion-button>
   </ion-toolbar>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Desarrollado app
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
